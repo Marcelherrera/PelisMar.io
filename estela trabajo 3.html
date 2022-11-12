@@ -1,0 +1,262 @@
+  <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pelis-mar</title>
+        <style type="text/css">  
+        
+         
+            header {
+            background:rgba(119, 126, 228, 0);
+            color:rgb(7, 218, 255);
+            width:0%;
+            }
+
+            input#abrir-cerrar {
+            visibility:hidden;
+            position: absolute;
+            top: -9999px;
+            }
+
+
+            label[for="abrir-cerrar"] {
+            cursor:pointer;
+            padding: 4rem;
+            background-color:rgb(0, 0, 0);
+            color:#fff;
+            display:inline-block;
+            width:200%;
+
+            }
+
+            .cerrar {
+            display:none;
+            }
+
+            #sidebar {
+            width:0;
+            }
+
+            #contenido {
+            margin-left:4;
+            }
+
+            input#abrir-cerrar:checked ~ #sidebar {
+            width:230px;
+            }
+
+            input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+            margin-left:300px;
+            transition: margin-left .4s;
+            }
+
+
+            input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+            display:inline;
+            }
+
+            input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+            display:none;
+            }
+
+            .sidebar {
+            position: fixed;
+            height: 100%;
+            width: 0;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: #000000;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding: 1rem 0;
+            box-sizing:border-box;
+            }
+
+            .sidebar .boton-cerrar {
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 2rem;
+            display: block;
+            padding: 0;
+            line-height: 1.5rem;
+            margin: 0;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            vertical-align: top;
+            }
+
+            .sidebar ul, .sidebar li{
+            margin:0;
+            padding:0;
+            list-style:none inside;
+            }
+
+            .sidebar ul {
+            margin: 4rem auto;
+            display: block;
+            width: 80%;
+            min-width:200px;
+            }
+
+            .sidebar a {
+            display: block;
+            font-size: 120%;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+
+            }
+
+            .sidebar a:hover{
+            color:rgb(153, 223, 41);
+            background-color:#ffffff255, 153, 0);
+
+            }
+
+            h1 {
+            color:rgb(0, 0, 0);
+            font-size:190%;
+            font-weight:normal;
+            }
+            #contenido {
+            transition: margin-left .4s;
+            padding: 1rem;
+            }
+
+                .abrir-cerrar {
+                color: #fffefe;
+                font-size:677rem;
+                }
+
+                
+                
+                
+                <style>      
+                p {background-color: rgb(4, 0, 235);margin-bottom: .17em;font-family: arial,helvetica,sans-serif; }
+                body {background-image: url(https://i.blogs.es/733f83/image__208348_1455294999/450_1000.jpeg);font-style: bottom center;
+                background-size:1650px 900px;
+                background-attachment:fixed;
+                background-color: rgb(179, 73, 73);}
+                p {font-size: 16pt; color: rgb(3, 3, 3); text-indent: 2em; font-family: arial,sans-serif;}
+                .dark {font-weight: bold; }
+                </style>
+                </head>
+                <style>                                
+                *{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: top;
+                  }
+                  header{
+                  background-color: rgba(255, 255, 255, 0.882);
+                  }
+                  #logo{
+                  margin: auto;
+                  height: 150px;
+                  width: 390px;
+                  text-align: center;
+                  }
+                  #logo h1{
+                  font-family: 'Pacifico', cursive;
+                  font-size: 60px;
+                  }
+                  nav{
+                  height: 90px;
+                  background-color:#000000;
+                  text-align: center;
+                  }
+                  nav ul{
+                  list-style: none;
+                  display: inline-block;
+                  padding:12px;
+                  }
+                  nav ul li{
+                  float: left;
+                  margin-top: 10px;
+                  }
+                  nav ul li a {
+                  color: rgba(255, 255, 255, 0.882);
+                  font-weight: bold;
+                  text-decoration: none;
+                  font-size: 25px;
+                  padding: 28px;
+                  }
+                  nav ul li a:hover{
+                  background-color: rgb(255, 0, 0);
+                  }
+                  </style>
+                  <body>
+                  </head>
+                  <body>
+                  <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+                  <label for="abrir-cerrar">&#9798; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>
+                  <div id="sidebar" class="sidebar">
+                  <ul class="menu">
+                  <li><a href=>Que pelicula quieres ver?</a></li>
+                  <li><a href="comedia.html">Comedia</a></li>
+                  <li><a href="terror.html">Terror</a></li>
+                  <li><a href="accion.html">Accion</a></li>
+                  <li><a href="animacion.html">Aminacion</a></li>
+                  <li><a href="Anime.html">Anime</a></li>
+                  <li><a href="aventura.html">Aventura</a></li>
+                  <li><a href="biografia.html">Biografia</a></li>
+                  <li><a href="ciencia ficcion.html">Ciencia-ficcion</a></li>
+                  <li><a href="cortometrajes.html">Cortometrajes</a></li>
+                  <li><a href="comics.html">Comics</a></li>
+                  <li><a href="deportes.html">Deportes</a></li>
+                  <li><a href="Disney.html">Disney</a></li>                
+                  <li><a href="romance.html">Romance</a></li>
+                  <li><a href="suspenso.html">Suspenso</a></li>
+                  <li><a href="infantil.html">Infaltil</a></li>
+                                  </div>
+                      <div id="contenido">                 
+                    <nav>
+                    <ul>
+                    
+                   
+                    <li><a href="formulario.html">Formulario</a></li>
+                  <li><a href ="contacto.html">Contacto</a></li>
+                    <li><a href ="serie profe su.html" >Serie Profe Su</a></li>
+                    <li><a href="pelicula su.html"> Pelicula profe Su</a></li>
+                
+                </a></li>
+                    </ul>
+                    </nav>
+                    </header>
+                    </body>
+                    <body>
+                    <center>
+                    <marquee  behavior="alternate" direction="left">          
+                    <img src="970325c9-6369-4339-a45d-3d5bd822d686.jfif" width="600" height="400"/>
+                    </marquee>
+                    </center>
+
+
+                    
+                    
+                    
+                      <h3><FONT COLOR="white"> Todos los derechos estan reservados por &copy{Pelis-Mar} </FONT>
+                    
+                    
+                      <br></h3>
+                    <h3>                                                                         
+                    <body>
+                    <head>
+                  
+                            </p>          
+                      </form>
+                </div>  
+              </div>
+            </body>
+            </html>
+      </body> 
+      </div>
+      <br>
+      
+      
+      <br>
+  </body> 
+  <html>                    
